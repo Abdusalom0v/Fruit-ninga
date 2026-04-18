@@ -40,4 +40,4 @@ Goal: Try to get the highest score possible before the 60-second timer runs out 
 
 Developed by: Bakhrom
 
-Project Date: April 2026
+Project Date: March 2026
