@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finger Ninja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading">Loading...</div>
+    <div id="container">
+        <video id="video" autoplay playsinline></video>
+        <canvas id="canvas"></canvas>
+        <canvas id="gameCanvas"></canvas>
+
+        <div id="ui">
+            <div id="score">0</div>
+            <div id="timer">60</div>
+        </div>
+
+        <div class="lives" id="lives">❤️❤️❤️</div>
+
+        <div id="startScreen">
+            <h1>🥷 FINGER NINJA 🥷</h1>
+            <p class="subtitle">Slice fruits with your finger, avoid bombs!</p>
+            <button onclick="startGame()">Start Game</button>
+        </div>
+
+        <div id="gameOverScreen">
+            <h1>Game Over!</h1>
+            <div id="finalScore">0</div>
+            <button onclick="restartGame()">Play Again</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils"></script>
+    <script src="script.js"></script>
+</body>
+</html>
